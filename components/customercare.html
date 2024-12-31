@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://custom-cdn.com/ge-ss.css" rel="stylesheet">
+
+    <title>Responsive Form</title>
+  
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="container content-section my-5" id="customercare">
+        <div class="row gy-4">
+            <div class="col-12 col-md-6">
+                <h4 class="sub-title" style="color: #23368A;" id="customer_care">Customer Care</h4>
+                <p class="content-text" id="customer_care_p">
+                    We value your feedback and are committed to addressing any concerns, suggestions, or complaints that
+                    may arise from misunderstandings or differences of opinion. Our dedicated customer care unit works
+                    with all relevant departments to receive, investigate, and resolve your inquiries.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="p-3 rounded bg-light shadow" style="background-color: #eceaea; max-width: 400px">
+                    <div class="step-indicator mb-4 text-center">
+                        <span class="step active" id="1">1</span>
+                        <span class="step" id="2">2</span>
+                        <span class="step" id="3">3</span>
+                    </div>
+                    <form id="stepForm">
+                        <div class="form-step active">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label" id="full_name">Full Name</label>
+                                <input required type="text" class="form-control" name="fullName"
+                                    placeholder="Enter your full name" id="full_name_input">
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label" id="phone_number_">Phone Number</label>
+                                <input required type="text" class="form-control" name="number"
+                                    placeholder="Enter your number" id="phone_number_p">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" id="mail_address">Email Address</label>
+                                <input type="email" class="form-control" id="mail_address_p" name="email"
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="button" class="btn btn-primary next-btn w-100" id="nxt_btn">Next</button>
+                        </div>
+                        <div class="form-step">
+                            <div class="mb-3">
+                                <label for="address" class="form-label" id="address">Address</label>
+                                <input type="text" class="form-control" name="address" id="address_p"
+                                    placeholder="Enter your address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label" id="date">Date</label>
+                                <input type="date" class="form-control" name="date" id="data_p">
+                            </div>
+                            <div class="mb-3">
+                                <label for="time" class="form-label" id="time">Time</label>
+                                <input type="time" class="form-control" name="time" id="time_p">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" id="reception_evaluation">Reception evaluation</label>
+                                <div class="d-flex gap-3">
+                                    <label>
+                                        <input type="radio" name="evaluation" value="Good"> <span id="Good">Good</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="evaluation" value="Very Good"> <span
+                                            id="very_good">Very Good</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="evaluation" value="Excellent"><span
+                                            id="excellent">Excellent</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary prev-btn w-100 mb-2"
+                                id="prev_btn">Previous</button>
+                            <button type="button" class="btn btn-primary next-btn w-100" id="nxt_btn">Next</button>
+                        </div>
+                        <div class="form-step">
+                            <div class="mb-3">
+                                <label class="form-label" id="request_type">Request Type</label>
+                                <div class="d-flex gap-3">
+                                    <label>
+                                        <input type="radio" name="request" value="General"><span id="proposed">
+                                            Proposed</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="request" value="Specific"> <span
+                                            id="complaint">Complaint</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="request" value="Specific"> <span
+                                            id="general_inquiry">General Inquiry</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label" id="description">Description</label>
+                                <textarea required class="form-control" name="description" id="description_p" rows="5"
+                                    placeholder="Enter your description"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary prev-btn w-100 mb-2"
+                            id="prev_btn">Previous</button>
+                            <button type="submit" class="btn btn-success w-100" id="submit_btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="inq-placeholder" style="margin-top: 100px;"></div>
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

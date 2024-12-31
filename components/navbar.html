@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raydan Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://custom-cdn.com/ge-ss.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar bg-primary top-primary-color text-white py-2 ">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <div class="contact-info border border-white p-1 rounded border-2 m-0 ">
+                    <a href="tel:92000043" id="nv-nmber" class="text-decoration-none fw-bold "
+                        style="color: #002366;">📞
+                        92000043</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="nv-search" class="form-control d-inline w-75"
+                        placeholder="What are you looking for">
+                    <button class="btn btn-light">🔍</button>
+                </div>
+            </div>
+            <div class="stock-info">
+                <div class="dropdown">
+                    <span id="lang-switcher" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="switchLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" onclick="switchLanguage('ar')">العربية</a></li>
+                    </ul>
+                </div>
+                <span>Raydan Food <span class="text-danger">▼ 0.19%</span> 21.65SR</span>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="d-flex mx-auto justify-content-evenly align-items-center w-100 px-4 py-2">
+            <a class="navbar-brand fw-bold " style="cursor: pointer;" onclick="removePath()"
+                style="margin-left: 50px;"><img src="../assests/images/raydan-logo-1024x216.webp" alt="Raydan Logo"
+                    class="img-fluid" style="width: 150px; height: 45px;">
+            </a>
+            <div class="position-relative span-nvc mr-3 ">
+                <div class="d-flex align-items-center justify-content-center gap-5">
+
+                    <div class="dropdown d-md-none">
+                        <span id="lang-switcher" class="dropdown-toggle text-white" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" onclick="switchLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" onclick="switchLanguage('ar')">العربية</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse nvc " id="navbarNav">
+                    <ul class="navbar-nav mx-auto" id="nav_main_list">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="main_list1" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Redan
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="main_list1_list">
+                                <li><a id="main_list1_list1" class="dropdown-item"
+                                        href="../components/companyhistory.html">Company
+                                        history</a>
+                                </li>
+                                <li><a class="dropdown-item" id="main_list1_list2"
+                                        href="../components/ourmessage.html">Our Message</a></li>
+                                <li><a class="dropdown-item" id="main_list1_list3"
+                                        href="../components/awards.html">Awards and
+                                        Recongnition</a>
+                                </li>
+                                <li><a class="dropdown-item" id="main_list1_list4"
+                                        href="../components/qualityfoods.html">Quality and food
+                                        safety</a></li>
+                                <li><a class="dropdown-item" id="main_list1_list5" href="#">Board of directors and
+                                        committees</a></li>
+                                <li><a class="dropdown-item" id="main_list1_list6" href="#">Administrative structure</a>
+                                </li>
+                                <li><a class="dropdown-item" id="main_list1_list7"
+                                        href="../components/different.html">What make us
+                                        different?</a></li>
+                                <li><a class="dropdown-item" id="main_list1_list8"
+                                        href="../components/responsibility.html">Social
+                                        responsibility</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="main_list2" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="main_list2_list">
+                                <li><a class="dropdown-item" id="main_list2_list1"
+                                        href="../components/menu.html">Menu</a></li>
+                                <li><a class="dropdown-item" id="main_list2_list2"
+                                        href="../components/paties&banquet.html">Parties and
+                                        banquet</a></li>
+                                <li><a class="dropdown-item" id="main_list2_list3"
+                                        href="../components/subsistence.html">Subsistence</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="main_list3">Franchise</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="main_list4" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News and Media
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="main_list4_list">
+                                <li><a class="dropdown-item" href="../components/news.html"
+                                        id="main_list4_list1">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="#" id="main_list5">Investments and Investors</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="main_list6" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Investments in Companies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="main_list6_list">
+                                <li><a class="dropdown-item" id="main_list6_list1" href="../components/company.html">Al
+                                        Gouna Copmany</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="main_list7" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="main_list7_list">
+                                <li><a class="dropdown-item" id="main_list7_list1"
+                                        href="../components/contact.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" id="main_list7_list2"
+                                        href="../components/customercare.html">Customer Care</a>
+                                </li>
+                                <li><a class="dropdown-item" id="main_list7_list3" href="../components/joinus.html">Join
+                                        Us</a></li>
+                                <li><a class="dropdown-item" id="main_list7_list4"
+                                        href="../components/suppliers.html">Suppliers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
